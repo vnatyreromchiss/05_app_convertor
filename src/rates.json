@@ -1,0 +1,11 @@
+{
+  "success":true,
+  "timestamp":1621587424,
+  "base":"UAH",
+  "date":"2022-12-03",
+  "rates":{
+    "USD":41.30,
+    "EUR":39.90,
+    "CAD":30.0
+  }
+}

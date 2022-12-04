@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500,600,700,800,900&display=swap');
+ body {
+	 background-color: #f9f2ed;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ * {
+	 font-family: 'Inter', system-ui !important;
+	 box-sizing: border-box;
+	 user-select: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ .App {
+	 display: grid;
+	 grid-template-columns: 1fr 1fr;
+	 grid-column-gap: 30px;
+	 width: 800px;
+	 margin: 100px auto;
+	 background-color: #fff;
+	 padding: 30px;
+	 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+	 border-radius: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ .block input {
+	 border: 1px solid rgba(0, 0, 0, 0.1);
+	 font-size: 3rem;
+	 font-weight: bold;
+	 padding: 20px 20px;
+	 letter-spacing: 1.3px;
+	 outline: none;
+	 margin-top: 20px;
+	 border-radius: 5px;
+	 width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+ .currencies {
+	 display: flex;
+	 list-style: none;
+	 padding: 0;
+	 margin: 0;
+	 border: 1px solid rgba(0, 0, 0, 0.1);
+	 border-radius: 5px;
+	 overflow: hidden;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .currencies li {
+	 display: inline-flex;
+	 padding: 10px 20px;
+	 border-right: 1px solid rgba(0, 0, 0, 0.05);
+	 cursor: pointer;
+	 justify-content: center;
+	 flex: 1;
 }
+ .currencies li:hover {
+	 background-color: rgba(0, 0, 0, 0.03);
+}
+ .currencies li:active {
+	 background-color: rgba(0, 0, 0, 0.05);
+}
+ .currencies li.active {
+	 background-color: #16b67f;
+	 color: #fff;
+}
+ .currencies li:last-of-type {
+	 display: inline-flex;
+	 align-items: center;
+	 flex: 0 0 50px;
+	 border-right: 0;
+}
+ .currencies li:last-of-type svg {
+	 width: 16px;
+	 height: 16px;
+}
+ 
